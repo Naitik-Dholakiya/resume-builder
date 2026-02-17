@@ -145,3 +145,29 @@ body {
     margin: 10mm;
   }
 }
+
+/* Preview wrapper responsive */
+.preview-wrapper {
+  overflow-x: auto;
+}
+
+/* On large screens make preview sticky */
+@media (min-width: 992px) {
+  .preview-panel {
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+  }
+}
+
+/* Remove shadow when printing */
+@media print {
+  .left-panel {
+    display: none;
+  }
+
+  .preview-panel {
+    background: white !important;
+    padding: 0 !important;
+  }
+}
