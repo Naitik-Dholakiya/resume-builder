@@ -9,5 +9,6 @@ export default defineConfig({
       strict: false,
     }
   },
+  base: '/resume-builder/', // This is the base path for your application, adjust it as needed
   plugins: [react()],
 })
